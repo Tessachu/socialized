@@ -1,0 +1,2 @@
+# socialized
+Socialized WordPress Plugin

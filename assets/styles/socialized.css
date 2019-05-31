@@ -1,0 +1,150 @@
+.socialized-links,
+.socialized-links * {
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.socialized-links {
+    display: block;
+    text-align: center;
+    cursor: default;
+}
+
+.socialized-links:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+.socialized-links .share-text {
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.socialized-links .share-text.screen-reader-text {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    z-index: -1000;
+    opacity: 0;
+    cursor: default;
+}
+
+.socialized-links a.socialized-link {
+    display: inline-block;
+    margin: 0 0.5em 0;
+    vertical-align: middle;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.socialized-links:not(.icon-type-text) a.socialized-link {
+    font-size: 18px;
+    line-height: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.socialized-links a.socialized-link img {
+    display: block;
+    width: 32px;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    outline: none;
+}
+
+.socialized-links:not(.icon-type-png) a.socialized-link {
+    background: #333333;
+    color: #ffffff;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.socialized-links.icon-type-text a.socialized-link {
+    border: 2px solid #333333;
+    margin-top: 0.5em;
+    font-size: 14px;
+    padding: 3px 15px;
+    font-weight: 700;
+}
+
+.socialized-links:not(.icon-type-png) a.socialized-link.facebook {
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+.socialized-links:not(.icon-type-png) a.socialized-link.twitter {
+    background: #00aced;
+    border-color: #00aced;
+}
+
+.socialized-links:not(.icon-type-png) a.socialized-link.linkedin {
+    background: #007bb6;
+    border-color: #007bb6;
+}
+
+.socialized-links:not(.icon-type-png) a.socialized-link.pinterest {
+    background: #cb2027;
+    border-color: #cb2027;
+}
+
+.socialized-links.icon-type-fontawesome a.socialized-link:active,
+.socialized-links.icon-type-fontawesome a.socialized-link:focus,
+.socialized-links.icon-type-fontawesome a.socialized-link:hover {
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+
+.socialized-links.icon-type-text a.socialized-link.facebook:active,
+.socialized-links.icon-type-text a.socialized-link.facebook:focus,
+.socialized-links.icon-type-text a.socialized-link.facebook:hover {
+    background: #ffffff;
+    color: #3b5998;
+}
+
+.socialized-links.icon-type-text a.socialized-link.twitter:active,
+.socialized-links.icon-type-text a.socialized-link.twitter:focus,
+.socialized-links.icon-type-text a.socialized-link.twitter:hover {
+    background: #ffffff;
+    color: #00aced;
+}
+
+.socialized-links.icon-type-text a.socialized-link.linkedin:active,
+.socialized-links.icon-type-text a.socialized-link.linkedin:focus,
+.socialized-links.icon-type-text a.socialized-link.linkedin:hover {
+    background: #ffffff;
+    color: #007bb6;
+}
+
+.socialized-links.icon-type-text a.socialized-link.pinterest:active,
+.socialized-links.icon-type-text a.socialized-link.pinterest:focus,
+.socialized-links.icon-type-text a.socialized-link.pinterest:hover {
+    background: #ffffff;
+    color: #cb2027;
+}

@@ -3,7 +3,7 @@
  * Plugin Name: Socialized
  * Plugin URI: https://tessawatkins.com/socialized/
  * Description: Add social media sharing buttons to your articles that use shortened links which redirect with UTM parameters for link tracking purposes!
- * Version: 1.0.0
+ * Version: 1.2.0
  * Author: Tessa Watkins LLC
  * Author URI: https://tessawatkins.com/
  * 
@@ -349,6 +349,8 @@ class Socialized {
                                     <select id="<?php echo( $this->settings['prefix'] ); ?>buttons_location" name="<?php echo( $this->settings['prefix'] ); ?>buttons_location" required>
                                         <option value="top"<?php echo( $location == 'top' ? ' selected' : '' ); ?>><?php esc_html_e( 'Automatically place before the article\'s content (displays buttons horizontally)', $this->settings['slug'] ); ?></option>
                                         <option value="end"<?php echo( $location == 'end' ? ' selected' : '' ); ?>><?php esc_html_e( 'Automatically place after the article\'s content (displays buttons horizontally)', $this->settings['slug'] ); ?></option>
+                                        <option value="stick-left"<?php echo( $location == 'stick-left' ? ' selected' : '' ); ?>><?php esc_html_e( 'Automatically stick to the left of the article\'s content (displays buttons vertically)', $this->settings['slug'] ); ?></option>
+                                        <option value="stick-right"<?php echo( $location == 'stick-right' ? ' selected' : '' ); ?>><?php esc_html_e( 'Automatically stick to the right of the article\'s content (displays buttons vertically)', $this->settings['slug'] ); ?></option>
                                         <option value="hide"<?php echo( $location == 'hide' ? ' selected' : ''); ?>><?php esc_html_e( 'No automatic placement; use shortcodes in the content only (displays buttons horizontally)', $this->settings['slug'] ); ?></option>
                                     </select>
                                     <label for="<?php echo( $this->settings['prefix'] ); ?>buttons_location">
@@ -378,7 +380,7 @@ class Socialized {
                                     </label>
                                 </p>
                                 <p class="input-field">
-                                    <input id="<?php echo( $this->settings['prefix'] ); ?>twitter_related" name="<?php echo( $this->settings['prefix'] ); ?>twitter_related" value="<?php esc_attr_e( get_option( $this->settings['prefix'] . 'twitter_related', $this->settings['default']['twitter_related'] ) ); ?>" placeholder="TessaTechArtist" />
+                                    <input id="<?php echo( $this->settings['prefix'] ); ?>twitter_related" name="<?php echo( $this->settings['prefix'] ); ?>twitter_related" value="<?php esc_attr_e( get_option( $this->settings['prefix'] . 'twitter_related', $this->settings['default']['twitter_related'] ) ); ?>" placeholder="TessaTechArtist,SirPatStew,GeorgeTakei" />
                                     <label for="<?php echo( $this->settings['prefix'] ); ?>twitter_related">
                                         <?php esc_html_e( 'Comma separated list of up to three (3) related Twitter handles to suggest the user follows after they tweet your post', $this->settings['slug'] ); ?>
                                     </label>
@@ -499,12 +501,12 @@ class Socialized {
                 <?php endforeach; ?>
             </ol>
         <?php else : ?>
-            <p><?php esc_html_e( 'Edit the vanity slug above and save or', $this->settings['slug'] ); ?> <a href="<?php esc_url_e( $this->settings['admin_url'] ); ?>"><?php esc_html_e( 'automatically generate the missing ones', $this->settings['slug'] ); ?></a>.</p>
+            <p><?php esc_html_e( 'Edit the vanity slug above and save or', $this->settings['slug'] ); ?> <a href="<?php echo( esc_url( $this->settings['admin_url'] ) ); ?>"><?php esc_html_e( 'automatically generate the missing ones', $this->settings['slug'] ); ?></a>.</p>
         <?php endif;
         if( esc_attr( get_option( $this->settings['prefix'] . 'redirecting' ) ) != 'true' ) : ?>
-            <p><strong><em><?php esc_html_e( 'Redirects are disabled!', $this->settings['slug'] ); ?></em></strong> <a href="<?php esc_url_e( $this->settings['admin_url'] ); ?>"><?php esc_html_e( 'Enable vanity URLs', $this->settings['slug'] ); ?></a></p>           
+            <p><strong><em><?php esc_html_e( 'Redirects are disabled!', $this->settings['slug'] ); ?></em></strong> <a href="<?php echo( esc_url( $this->settings['admin_url'] ) ); ?>"><?php esc_html_e( 'Enable vanity URLs', $this->settings['slug'] ); ?></a></p>           
         <?php endif; ?>
-        <p><a href="<?php esc_url_e( $this->settings['admin_url'] ); ?>"><?php esc_html_e( 'Edit Global Settings', $this->settings['slug'] ); ?></a></p>
+        <p><a href="<?php echo( esc_url( $this->settings['admin_url'] ) ); ?>"><?php esc_html_e( 'Edit Global Settings', $this->settings['slug'] ); ?></a></p>
         <p><a href="https://support.google.com/analytics/answer/1033863" target="_blank"><?php esc_html_e( 'Learn more', $this->settings['slug'] ); ?></a> <?php esc_html_e( 'about Custom Campaigns in Google.', $this->settings['slug'] ); ?></p>
         <?php
     }
@@ -789,16 +791,23 @@ class Socialized {
 	 *
 	 * @since 1.0.0
 	 */
-    function enqueue_scripts() {
-        //Enqueue the frontend stylesheet for buttons
-        wp_enqueue_style( $this->settings['slug'], $this->settings['url'] . 'assets/styles/socialized.css', array(), $this->settings['version'] );
-        
+    function enqueue_scripts() {        
         //Enqueue the FontAwesome 5 Free stylesheet, optionally based on settings
         $icon_type = get_option( $this->settings['prefix'] . 'icon_type', $this->settings['default']['icon_type'] );
         $exclude_fontawesome = get_option( $this->settings['prefix'] . 'exclude_fontawesome', $this->settings['default']['exclude_fontawesome'] );
         if( $icon_type == 'fontawesome' && $exclude_fontawesome == 'false' ) {
             wp_enqueue_style( $this->settings['slug'] . '-fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css', array(), '5.2.0' );
         }
+
+        //Enqueue the frontend stylesheet for buttons
+        wp_enqueue_style( $this->settings['slug'], $this->settings['url'] . 'assets/styles/socialized.css', array(), $this->settings['version'] );
+
+        //Enqueue the stickybits script, optionally based on settings
+        $placement = get_option( $this->settings['prefix'] . 'buttons_location', $this->settings['default']['buttons_location'] );
+        if( strpos( $placement, 'stick-' ) !== false ) {
+            wp_enqueue_script( $this->settings['slug'] . '-stickybits', $this->settings['url'] . 'assets/scripts/vendor/stickybits.js', array( 'jquery' ), '3.6.1', true );
+            wp_enqueue_script( $this->settings['slug'], $this->settings['url'] . 'assets/scripts/socialized.js', array( $this->settings['slug'] . '-stickybits' ), $this->settings['version'], true );
+        } 
     }
 
     /**
@@ -895,11 +904,11 @@ class Socialized {
                     break;
             }
             if( ! empty( $link ) ) {
-                $icon_type = get_option( $this->settings['prefix'] . 'icon_type' );
+                $icon_type = get_option( $this->settings['prefix'] . 'icon_type', $this->settings['default']['icon_type'] );
                 $icon = '';
                 switch( $icon_type ) {
                     case 'fontawesome':
-                        $icon = sprintf( '<i class="fa fab fa-%s"></i>', $social_data['fontawesome'] );
+                        $icon = sprintf( '<i class="fab fa-%s"></i>', $social_data['fontawesome'] );
                         break;
                     case 'text':
                         $icon = sprintf( '<span class="%s-text">%s</span>', $this->settings['slug'], $social_data['title'] );
@@ -927,7 +936,6 @@ class Socialized {
             $shareText = sprintf( '<span class="share-text%2$s">%1$s</span>', __( 'Share this on:', $this->settings['slug'] ), $icon_type == 'text' ? '' : ' screen-reader-text' );
             $output = sprintf( '<p class="socialized-links placement-%2$s icon-type-%3$s">%4$s%1$s</p>', implode( '', $buttons ), $placement, $icon_type, $shareText );
         }
-        $output = esc_html( $output );
         if( $echo ) { echo( $output ); }
         else { return $output; }
     }
@@ -973,6 +981,16 @@ class Socialized {
                 switch( $placement ) {
                     case 'end':
                         $fullcontent = $content . $buttons;
+                        break;
+                    case 'stick-left':
+                    case 'stick-right':
+                        //Only apply sticky buttons to icon buttons, not to text buttons
+                        $icon_type = get_option( $this->settings['prefix'] . 'icon_type', $this->settings['default']['icon_type'] );
+                        if( $icon_type != 'text' ) {
+                            $fullcontent = sprintf( '<div class="socialized-sticky-wrapper %3$s">%1$s%2$s</div>', $buttons, $content, $placement );
+                        } else {
+                            $fullcontent = $buttons . $content;
+                        }
                         break;
                     default:
                         $fullcontent = $buttons . $content;

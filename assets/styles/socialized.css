@@ -1,5 +1,6 @@
 .socialized-links,
-.socialized-links * {
+.socialized-links *,
+.socialized-sticky-wrapper {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -13,7 +14,8 @@
     cursor: default;
 }
 
-.socialized-links:after {
+.socialized-links:after,
+.socialized-sticky-wrapper:after {
     content: '';
     display: block;
     width: 100%;
@@ -147,4 +149,46 @@
 .socialized-links.icon-type-text a.socialized-link.pinterest:hover {
     background: #ffffff;
     color: #cb2027;
+}
+
+
+/* Sticky Buttons */
+
+.socialized-sticky-wrapper .socialized-links {
+    display: block;
+    width: 32px;
+    position: sticky;
+}
+
+.socialized-sticky-wrapper .socialized-links a.socialized-link {
+    display: block;
+    margin: 0 0 0.5em;
+}
+
+.socialized-sticky-wrapper .socialized-links a.socialized-link:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Sticky Buttons Left */
+
+.socialized-sticky-wrapper.stick-left {
+    padding-left: 45px;
+}
+
+.socialized-sticky-wrapper.stick-left .socialized-links {
+    float: left;
+    margin-left: -45px;
+}
+
+
+/* Sticky Buttons Right */
+
+.socialized-sticky-wrapper.stick-right {
+    padding-right: 45px;
+}
+
+.socialized-sticky-wrapper.stick-right .socialized-links {
+    float: right;
+    margin-right: -45px;
 }

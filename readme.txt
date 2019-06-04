@@ -1,15 +1,15 @@
 === Socialized ===
 Contributors: tessawatkinsllc
-Donate link: https://tessawatkins.com/payment/
+Donate link: https://tessawatkins.com/socialized/
 Tags: social media, link tracking, Google UTM, sharing, Custom Google Campaign
 Requires at least: 4.6
-Tested up to: 4.7
-Stable tag: 4.3
+Tested up to: 5.2
+Stable tag: 1.2.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Adds social media sharing buttons to your posts that automatically uses randomly generated vanity URLs that redirect back to your posts with custom Google campaign parameters.
+Adds social media sharing buttons to your posts that uses generated vanity URLs to redirect back to your posts with custom Google campaign parameters.
 
 == Description ==
 
@@ -23,18 +23,16 @@ When a user clicks a referral link, the parameters you add are sent to Analytics
 
 This plugin accomplishes two (2) things:
 
-Automatically generates a vanity URL for each social media sharing button for each post that redirects to the post with the following UTM parameters:
-* utm_source. Possible value(s): facebook | twitter | linkedin | pinterest
-* utm_medium. Possible value(s): social
-* utm_content. Possible value(s): socialized-share-link
-* utm_campaign: Possible value(s): socialized | or define in Settings
+1. Automatically generates a vanity URL for each social media sharing button for each post that redirects to the post with the following UTM parameters:
+* utm_source. Possible value(s): `facebook` | `twitter` | `linkedin` | `pinterest`
+* utm_medium. Possible value(s): `social`
+* utm_content. Possible value(s): `socialized-share-link`
+* utm_campaign: Possible value(s): `socialized` | or define in Settings
 * utm_term:  Possible value(s):  Defined by typing in the text box on the post or page | or the “Focus keyphrase” by Yoast SEO
 
-Displays social media sharing links in the content of each post that uses these vanity URLs.
+2. Displays social media sharing links in the content of each post that uses these vanity URLs.
 
-Your permalink struture will not be affected.
-
-The randomly generated vanity URLs are automatically created when you save the post
+Your permalink struture will not be affected. The randomly generated vanity URLs are automatically created when you save the post.
 
 == Installation ==
 
@@ -88,6 +86,9 @@ If there is an image in the content of your article, it will find the first one 
 
 == Upgrade Notice ==
 
+= 1.2.0 =
+Added two (2) new button placements: stick left and right!
+
 = 1.0.1 =
 Fixes based on first plugin review.
 
@@ -96,11 +97,14 @@ Initial submission!
 
 == Changelog ==
 
+= 1.2.0 =
+* Feature: Added two (2) button placements: stick left and right.
+
 = 1.0.1 =
-* Sanitized input data to improve security.
-* Escaped outputs to help secure data.
-* Enqueued Font Awesome stylesheet for Settings admin page.
-* Fixed languages location.
+* Fix: Sanitized input data to improve security.
+* Fix: Escaped outputs to help secure data.
+* Fix: Enqueued Font Awesome stylesheet for Settings admin page.
+* Fix: Updated languages location.
 
 = 1.0.0 =
-* Initial submission!
+* Major: Initial submission!

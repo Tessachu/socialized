@@ -63,6 +63,8 @@
 
 .socialized-links a.socialized-link img {
     display: block;
+    margin: 0;
+    padding: 0;
     width: 32px;
     height: auto;
     max-width: 100%;

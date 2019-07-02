@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Socialized
  * Plugin URI: https://tessawatkins.com/socialized/
- * Description: Add social media sharing buttons to your articles that use shortened links which redirect with UTM parameters for link tracking purposes!
- * Version: 1.2.0
+ * Description: Add social media sharing buttons to your posts, pages, and custom post types that automatically track to a custom campaign with your Google Analytics!
+ * Version: 1.2.3
  * Author: Tessa Watkins LLC
  * Author URI: https://tessawatkins.com/
  * 
@@ -625,10 +625,12 @@ class Socialized {
                         if( $suffix == $social_data['suffix'] ) {
                             //This suffix belongs to a generated URL, now go find it
                             $soc_query = new WP_Query( array(
+                                'post_type' => explode( ',', get_option( $this->settings['prefix'] . 'post_types', $this->settings['default']['post_types'] ) ),//Retrieves an array of post types from plugin settings
+                                'posts_per_page' => -1,//Get all results
                                 'post_status' => array(
-                                    'publish',//A published post or page
+                                    'publish',//Publicly published post
                                     'future',//Scheduled post
-                                    'private',//Not visible to users who are not logged in
+                                    'private',//Privately published post, only visible to logged-in users
                                 ),
                                 'meta_key' => 'socialized_slug',
                                 'meta_value' => $slug,
@@ -915,20 +917,22 @@ class Socialized {
                         break;
                     default:
                         $icon = sprintf(
-                            '<img class="%3$s-icon" src="%1$s" alt="%2$s Icon" />',
+                            '<img class="%3$s-icon" src="%1$s" alt="%4$s %2$s" />',
                             $social_data['icon'],
                             $social_data['title'],
-                            $this->settings['slug']
+                            $this->settings['slug'],
+                            __( 'Share on', $this->settings['slug'] )
                         );
                         break;
                 }
-                $buttons[] = sprintf( '<a href="%4$s" target="_blank" title="Share on %2$s" class="socialized-link %1$s" onclick="window.open(this.href, \'targetWindow\', \'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=%5$s,height=%6$s\'); return false;">%3$s</a>',
+                $buttons[] = sprintf( '<a href="%4$s" target="_blank" title="%7$s %2$s" class="socialized-link %1$s" onclick="window.open(this.href, \'targetWindow\', \'toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=%5$s,height=%6$s\'); return false;">%3$s</a>',
                     $social_class,
                     $social_data['title'],
                     $icon,
                     $link,
                     $social_data['width'],
-                    $social_data['height']
+                    $social_data['height'],
+                    __( 'Share on', $this->settings['slug'] )
                 );
             }
         }

@@ -1,0 +1,496 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Socialized\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-21 21:18+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.2\n"
+"X-Domain: socialized"
+
+#: templates/dashboard-admin.php:97
+msgid " (Use the shortcode "
+msgstr ""
+
+#: templates/dashboard-admin.php:99
+msgid ""
+" to display these buttons within the content. If placed, it will override "
+"the automatic placement so they're only displayed once."
+msgstr ""
+
+#: templates/dashboard-admin.php:220
+#, php-format
+msgid ""
+" | or the “<a href=\"%1$s\" target=\"%3$s\">Focus keyphrase</a>” by <a "
+"href=\"%2$s\" target=\"%3$s\" rel=\"noopener noreferrer\">Yoast SEO</a>"
+msgstr ""
+
+#: templates/dashboard-admin.php:24
+msgid "About"
+msgstr ""
+
+#: socialized-copy.php:568 templates/dashboard-admin.php:204
+msgid "about Custom Campaigns in Google."
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add social media sharing buttons to your posts, pages, and custom post types "
+"that automatically track to a custom campaign with your Google Analytics!"
+msgstr ""
+
+#: templates/dashboard-admin.php:148
+msgid "Advanced Settings"
+msgstr ""
+
+#: socialized-copy.php:174 inc/class-main.php:166
+msgid "After content (displays horizontally)"
+msgstr ""
+
+#. Author of the plugin
+msgid "AuRise Creative"
+msgstr ""
+
+#: templates/dashboard-admin.php:152
+msgid "Autofix Sticky"
+msgstr ""
+
+#. ID
+#: socialized-copy.php:267 inc/class-main.php:254
+msgid "Autofix Sticky Icons"
+msgstr ""
+
+#: socialized-copy.php:562 templates/edit-metabox.php:42
+msgid "automatically generate the missing ones"
+msgstr ""
+
+#: templates/dashboard-admin.php:208
+msgid ""
+"Automatically generates a vanity URL for each social media sharing button "
+"for each post that redirects to the post with the following UTM parameters:"
+msgstr ""
+
+#: socialized-copy.php:173 inc/class-main.php:165
+msgid "Before content (displays horizontally)"
+msgstr ""
+
+#: templates/dashboard-support.php:27
+msgid "Buy me a Coffee"
+msgstr ""
+
+#: templates/dashboard-admin.php:202
+msgid ""
+"By adding campaign parameters to the destination URLs you use in your ad "
+"campaigns, you can collect information about the overall efficacy of those "
+"campaigns, and also understand where the campaigns are more effective. For "
+"example, your <em>Summer Sale</em> campaign might be generating lots of "
+"revenue, but if you're running the campaign in several different social apps,"
+" you want to know which of them is sending you the customers who generate "
+"the most revenue. Or if you're running different versions of the campaign "
+"via email, video ads, and in-app ads, you can compare the results to see "
+"where your marketing is most effective."
+msgstr ""
+
+#: templates/dashboard-admin.php:110
+msgid "Campaign"
+msgstr ""
+
+#: socialized-copy.php:552 templates/edit-metabox.php:33
+msgid "Campaign Content:"
+msgstr ""
+
+#: socialized-copy.php:550 templates/edit-metabox.php:31
+msgid "Campaign Medium:"
+msgstr ""
+
+#: socialized-copy.php:551 templates/edit-metabox.php:32
+msgid "Campaign Name:"
+msgstr ""
+
+#: socialized-copy.php:549 templates/edit-metabox.php:30
+msgid "Campaign Source:"
+msgstr ""
+
+#: socialized-copy.php:518 templates/edit-metabox.php:7
+msgid "Campaign Term"
+msgstr ""
+
+#: socialized-copy.php:554 templates/edit-metabox.php:35
+msgid "Campaign Term:"
+msgstr ""
+
+#: templates/dashboard-admin.php:56
+msgid "Choose a button style for displaying the links"
+msgstr ""
+
+#: templates/dashboard-admin.php:95
+msgid "Choose where to display the sharing buttons"
+msgstr ""
+
+#: templates/dashboard-admin.php:234
+#, php-format
+msgid ""
+"Click the button below to generate vanity URLs for the following post type(s)"
+" that do not already have them: <code>%s</code>. It was already run once "
+"when this plugin was activated, and each newly created one generates their "
+"own when it is first saved, even as a draft. If you created a custom post "
+"type and wish to generate links for all of those as well, be sure to save "
+"the custom post type's slug in <em>Settings</em> before clicking this button."
+msgstr ""
+
+#: templates/dashboard-support.php:26
+msgid "Coffee cup"
+msgstr ""
+
+#: templates/dashboard-admin.php:193
+msgid "Comma separated list of the post types to generate URLs for"
+msgstr ""
+
+#: templates/dashboard-admin.php:142
+msgid ""
+"Comma separated list of up to three (3) related Twitter handles to recommend "
+"to the user after they tweet your content."
+msgstr ""
+
+#: socialized-copy.php:153 inc/class-main.php:150
+msgid "Copied!"
+msgstr ""
+
+#: socialized-copy.php:142 inc/class-main.php:152
+msgid "Copy to clipboard"
+msgstr ""
+
+#: inc/class-main.php:142
+msgid "Copy URL"
+msgstr ""
+
+#: templates/dashboard-admin.php:217
+msgid "Defined by typing in the text box on the post or page"
+msgstr ""
+
+#: templates/dashboard-admin.php:37
+msgid "Display"
+msgstr ""
+
+#: templates/dashboard-admin.php:229
+msgid ""
+"Displays social media sharing links in the content of each post that uses "
+"these vanity URLs."
+msgstr ""
+
+#: templates/dashboard-support.php:24
+msgid "Donate"
+msgstr ""
+
+#. 5
+#: inc/class-main.php:1090
+msgid "Edit"
+msgstr ""
+
+#: socialized-copy.php:567 templates/edit-metabox.php:47
+msgid "Edit Global Settings"
+msgstr ""
+
+#: socialized-copy.php:562 templates/edit-metabox.php:42
+msgid "Edit the vanity slug above and save or"
+msgstr ""
+
+#: socialized-copy.php:124 inc/class-main.php:132
+msgid "Email"
+msgstr ""
+
+#: socialized-copy.php:565 templates/edit-metabox.php:45
+msgid "Enable vanity URLs"
+msgstr ""
+
+#: templates/dashboard-support.php:9
+msgid "Enjoying my plugin? Please leave a review!"
+msgstr ""
+
+#. ID
+#: socialized-copy.php:245 inc/class-main.php:239
+msgid "Exclude FontAwesome"
+msgstr ""
+
+#: socialized-copy.php:84 inc/class-main.php:92
+msgid "Facebook"
+msgstr ""
+
+#: socialized-copy.php:183
+msgid "Font Awesome Icons"
+msgstr ""
+
+#: templates/dashboard-admin.php:63
+msgid "FontAwesome"
+msgstr ""
+
+#: inc/class-main.php:175
+msgid "FontAwesome Icons"
+msgstr ""
+
+#: inc/class-main.php:139
+msgid "Forward via email"
+msgstr ""
+
+#: templates/dashboard-admin.php:25 templates/dashboard-admin.php:236
+msgid "Generate Missing Vanity URLs"
+msgstr ""
+
+#: inc/class-main.php:1071
+msgid "hit(s)"
+msgstr ""
+
+#: socialized-copy.php:548 templates/edit-metabox.php:29
+msgid "Hits:"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://aurisecreative.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://aurisecreative.com/socialized/"
+msgstr ""
+
+#: socialized-copy.php:1165 inc/class-main.php:1285
+msgid "I thought you might like this article:"
+msgstr ""
+
+#: socialized-copy.php:177 inc/class-main.php:169
+msgid "I will use shortcodes only"
+msgstr ""
+
+#: templates/dashboard-admin.php:41
+msgid "Icons"
+msgstr ""
+
+#: inc/class-main.php:1049
+msgid "ID"
+msgstr ""
+
+#: templates/dashboard-admin.php:178
+msgid ""
+"If disabled, the social media sharing links will still appear on the "
+"posts/pages, but will share your permalink with the UTM parameters added to "
+"it instead. Any vanity URLs created by this plugin that were shared on "
+"social media or other mediums will also stop redirecting, resulting in a 404 "
+"page to be displayed"
+msgstr ""
+
+#: socialized-copy.php:520 templates/edit-metabox.php:9
+msgid "If left blank, this will use Yoast SEO's \"Focus keyphrase\""
+msgstr ""
+
+#: templates/dashboard-support.php:15
+msgid ""
+"If you're experiencing issues with this plugin or have a suggestion for a "
+"feature or fix, please check the support threads or submit a ticket to give "
+"me the opportunity to make it better. I want to help!"
+msgstr ""
+
+#: socialized-copy.php:182 inc/class-main.php:174
+msgid "Image Icons"
+msgstr ""
+
+#: socialized-copy.php:568 templates/dashboard-admin.php:204
+msgid "Learn more"
+msgstr ""
+
+#: socialized-copy.php:175 inc/class-main.php:167
+msgid "Left of content (displays vertically)"
+msgstr ""
+
+#: templates/dashboard-admin.php:106
+msgid "Link Tracking"
+msgstr ""
+
+#: socialized-copy.php:104 inc/class-main.php:112
+msgid "LinkedIn"
+msgstr ""
+
+#: templates/dashboard-admin.php:80
+msgid "Location"
+msgstr ""
+
+#: templates/dashboard-admin.php:71 templates/dashboard-admin.php:160
+#: templates/dashboard-admin.php:177
+msgid "OFF"
+msgstr ""
+
+#: templates/dashboard-admin.php:70 templates/dashboard-admin.php:159
+#: templates/dashboard-admin.php:176
+msgid "ON"
+msgstr ""
+
+#: templates/dashboard-admin.php:213
+msgid "or define in <em>Settings</em>"
+msgstr ""
+
+#: socialized-copy.php:114 inc/class-main.php:122
+msgid "Pinterest"
+msgstr ""
+
+#: templates/dashboard-support.php:2
+msgid "Plugin Support"
+msgstr ""
+
+#: templates/dashboard-admin.php:210 templates/dashboard-admin.php:211
+#: templates/dashboard-admin.php:212 templates/dashboard-admin.php:213
+#: templates/dashboard-admin.php:216
+msgid "Possible value(s):"
+msgstr ""
+
+#: inc/class-main.php:1050
+msgid "Post Type"
+msgstr ""
+
+#: templates/dashboard-admin.php:186
+msgid "Post Types"
+msgstr ""
+
+#: socialized-copy.php:234 inc/class-main.php:228
+msgid "Redirections Enabled"
+msgstr ""
+
+#: socialized-copy.php:565 templates/edit-metabox.php:45
+msgid "Redirects are disabled!"
+msgstr ""
+
+#: templates/dashboard-admin.php:169
+msgid "Redirects Enabled"
+msgstr ""
+
+#: templates/dashboard-admin.php:136
+msgid "Related Twitter Handles"
+msgstr ""
+
+#: socialized-copy.php:176 inc/class-main.php:168
+msgid "Right of content (displays vertically)"
+msgstr ""
+
+#: socialized-copy.php:157
+msgid "ROP: Facebook"
+msgstr ""
+
+#: templates/dashboard-admin.php:197
+msgid "Save All Settings"
+msgstr ""
+
+#: socialized-copy.php:375 inc/class-main.php:380
+#: templates/dashboard-admin.php:22
+msgid "Settings"
+msgstr ""
+
+#: templates/dashboard-admin.php:9
+msgid "Settings Saved!"
+msgstr ""
+
+#: socialized-copy.php:1124 inc/class-main.php:1244
+msgid "Share on"
+msgstr ""
+
+#: socialized-copy.php:1227 inc/class-main.php:1338
+msgid "Share this on:"
+msgstr ""
+
+#. Name of the plugin
+#: socialized-copy.php:67 inc/class-main.php:74
+msgid "Socialized"
+msgstr ""
+
+#: templates/dashboard-support.php:17
+msgid "Support Forums"
+msgstr ""
+
+#: socialized-copy.php:184 inc/class-main.php:176
+msgid "Text Links"
+msgstr ""
+
+#: templates/dashboard-admin.php:116
+msgid ""
+"The value of the \"utm_campaign\" parameter for all links shared with this "
+"plugin."
+msgstr ""
+
+#: templates/dashboard-support.php:21
+msgid ""
+"This is a <em>free</em> plugin that I poured a bit of my heart and soul into "
+"with the sole purpose of being helpful to you and the users of your "
+"WordPress website. Please consider supporting my queer and autistic-led "
+"small business by donating! Thank you!"
+msgstr ""
+
+#: templates/dashboard-admin.php:205
+msgid "This plugin accomplishes two (2) things:"
+msgstr ""
+
+#: inc/class-main.php:1051
+msgid "Title"
+msgstr ""
+
+#: templates/dashboard-admin.php:72
+msgid ""
+"Toggle this off if your theme or another plugin already implements "
+"FontAwesome version 6 or later."
+msgstr ""
+
+#: socialized-copy.php:94 inc/class-main.php:102
+msgid "Twitter"
+msgstr ""
+
+#: templates/dashboard-admin.php:123
+msgid "Twitter Handle"
+msgstr ""
+
+#: socialized-copy.php:529 templates/edit-metabox.php:18
+msgid "Update Links"
+msgstr ""
+
+#: socialized-copy.php:526 templates/edit-metabox.php:15
+msgid "Vanity Slug"
+msgstr ""
+
+#: socialized-copy.php:547 templates/edit-metabox.php:28
+msgid "Vanity URL:"
+msgstr ""
+
+#. 6
+#: inc/class-main.php:1091
+msgid "View"
+msgstr ""
+
+#: templates/dashboard-admin.php:23
+msgid "View All"
+msgstr ""
+
+#: templates/dashboard-admin.php:203
+msgid ""
+"When a user clicks a referral link, the parameters you add are sent to "
+"Analytics, and the related data is available in the Campaigns reports."
+msgstr ""
+
+#: templates/dashboard-admin.php:161
+msgid ""
+"When sticking the buttons to the left or right, certain CSS attributes need "
+"to be set for it to work. Enabling this will automatically fix those issues."
+msgstr ""
+
+#: templates/dashboard-support.php:11
+msgid "Write a Review"
+msgstr ""
+
+#: templates/dashboard-admin.php:129
+msgid "Your default Twitter handle"
+msgstr ""
+
+#: templates/dashboard-admin.php:231
+msgid "Your permalink struture will not be affected."
+msgstr ""

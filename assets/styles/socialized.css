@@ -1,3 +1,32 @@
+/*!
+    Name: socialized.css
+    Author: AuRise Creative | https://aurisecreative.com
+    Last Modified: September 18, 2022, at 10:27
+*/
+
+:root {
+    --socialized: #333333;
+    --socialized-white: #ffffff;
+    --socialized-off-white: #efefef;
+    --socialized-facebook: #3b5998;
+    --socialized-twitter: #00aced;
+    --socialized-linkedin: #007bb6;
+    --socialized-instagram: #e95950;
+    --socialized-instagram-blue-1: #405DE6;
+    --socialized-instagram-blue-2: #5851D8;
+    --socialized-instagram-purple: #833AB4;
+    --socialized-instagram-pink-1: #C13584;
+    --socialized-instagram-pink-2: #E1306C;
+    --socialized-instagram-red: #FD1D1D;
+    --socialized-instagram-orange-1: #F56040;
+    --socialized-instagram-orange-2: #F77737;
+    --socialized-instagram-yellow-1: #FCAF45;
+    --socialized-instagram-yellow-2: #FFDC80;
+    --socialized-pinterest: #e60023;
+    --socialized-messenger: #00B2FF;
+    --socialized-messenger-2: #006AFF;
+}
+
 .socialized-links,
 .socialized-links *,
 .socialized-sticky-wrapper {
@@ -6,6 +35,12 @@
     -o-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.socialized-sticky-wrapper {
+    display: block;
+    height: auto;
+    overflow: visible;
 }
 
 .socialized-links {
@@ -42,10 +77,15 @@
     cursor: default;
 }
 
-.socialized-links a.socialized-link {
+.socialized-links .socialized-link-wrapper {
     display: inline-block;
     margin: 0 0.5em 0;
     vertical-align: middle;
+    position: relative;
+}
+
+.socialized-links .socialized-link-wrapper a.socialized-link {
+    display: block;
     text-decoration: none;
     border: none;
     outline: none;
@@ -54,14 +94,14 @@
     cursor: pointer;
 }
 
-.socialized-links:not(.icon-type-text) a.socialized-link {
+.socialized-links:not(.icon-type-text) .socialized-link-wrapper a.socialized-link {
     font-size: 18px;
     line-height: 32px;
     width: 32px;
     height: 32px;
 }
 
-.socialized-links a.socialized-link img {
+.socialized-links .socialized-link-wrapper a.socialized-link img {
     display: block;
     margin: 0;
     padding: 0;
@@ -72,9 +112,9 @@
     outline: none;
 }
 
-.socialized-links:not(.icon-type-png) a.socialized-link {
-    background: #333333;
-    color: #ffffff;
+.socialized-links:not(.icon-type-png) .socialized-link-wrapper a.socialized-link {
+    background: var(--socialized);
+    color: var(--socialized-white);
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
@@ -87,37 +127,37 @@
     transition: all 0.3s linear;
 }
 
-.socialized-links.icon-type-text a.socialized-link {
-    border: 2px solid #333333;
+.socialized-links.icon-type-text .socialized-link-wrapper a.socialized-link {
+    border: 2px solid var(--socialized);
     margin-top: 0.5em;
     font-size: 14px;
     padding: 3px 15px;
     font-weight: 700;
 }
 
-.socialized-links:not(.icon-type-png) a.socialized-link.facebook {
-    background: #3b5998;
-    border-color: #3b5998;
+.socialized-links:not(.icon-type-png) .socialized-link-wrapper.facebook a.socialized-link {
+    background: var(--socialized-facebook);
+    border-color: var(--socialized-facebook);
 }
 
-.socialized-links:not(.icon-type-png) a.socialized-link.twitter {
-    background: #00aced;
-    border-color: #00aced;
+.socialized-links:not(.icon-type-png) .socialized-link-wrapper.twitter a.socialized-link {
+    background: var(--socialized-twitter);
+    border-color: var(--socialized-twitter);
 }
 
-.socialized-links:not(.icon-type-png) a.socialized-link.linkedin {
-    background: #007bb6;
-    border-color: #007bb6;
+.socialized-links:not(.icon-type-png) .socialized-link-wrapper.linkedin a.socialized-link {
+    background: var(--socialized-linkedin);
+    border-color: var(--socialized-linkedin);
 }
 
-.socialized-links:not(.icon-type-png) a.socialized-link.pinterest {
-    background: #cb2027;
-    border-color: #cb2027;
+.socialized-links:not(.icon-type-png) .socialized-link-wrapper.pinterest a.socialized-link {
+    background: var(--socialized-pinterest);
+    border-color: var(--socialized-pinterest);
 }
 
-.socialized-links.icon-type-fontawesome a.socialized-link:active,
-.socialized-links.icon-type-fontawesome a.socialized-link:focus,
-.socialized-links.icon-type-fontawesome a.socialized-link:hover {
+.socialized-links.icon-type-fontawesome .socialized-link-wrapper a.socialized-link:active,
+.socialized-links.icon-type-fontawesome .socialized-link-wrapper a.socialized-link:focus,
+.socialized-links.icon-type-fontawesome .socialized-link-wrapper a.socialized-link:hover {
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
@@ -125,32 +165,32 @@
     border-radius: 40px;
 }
 
-.socialized-links.icon-type-text a.socialized-link.facebook:active,
-.socialized-links.icon-type-text a.socialized-link.facebook:focus,
-.socialized-links.icon-type-text a.socialized-link.facebook:hover {
-    background: #ffffff;
-    color: #3b5998;
+.socialized-links.icon-type-text .socialized-link-wrapper.facebook a.socialized-link:active,
+.socialized-links.icon-type-text .socialized-link-wrapper.facebook a.socialized-link:focus,
+.socialized-links.icon-type-text .socialized-link-wrapper.facebook a.socialized-link:hover {
+    background: var(--socialized-white);
+    color: var(--socialized-facebook);
 }
 
-.socialized-links.icon-type-text a.socialized-link.twitter:active,
-.socialized-links.icon-type-text a.socialized-link.twitter:focus,
-.socialized-links.icon-type-text a.socialized-link.twitter:hover {
-    background: #ffffff;
-    color: #00aced;
+.socialized-links.icon-type-text .socialized-link-wrapper.twitter a.socialized-link:active,
+.socialized-links.icon-type-text .socialized-link-wrapper.twitter a.socialized-link:focus,
+.socialized-links.icon-type-text .socialized-link-wrapper.twitter a.socialized-link:hover {
+    background: var(--socialized-white);
+    color: var(--socialized-twitter);
 }
 
-.socialized-links.icon-type-text a.socialized-link.linkedin:active,
-.socialized-links.icon-type-text a.socialized-link.linkedin:focus,
-.socialized-links.icon-type-text a.socialized-link.linkedin:hover {
-    background: #ffffff;
-    color: #007bb6;
+.socialized-links.icon-type-text .socialized-link-wrapper.linkedin a.socialized-link:active,
+.socialized-links.icon-type-text .socialized-link-wrapper.linkedin a.socialized-link:focus,
+.socialized-links.icon-type-text .socialized-link-wrapper.linkedin a.socialized-link:hover {
+    background: var(--socialized-white);
+    color: var(--socialized-linkedin);
 }
 
-.socialized-links.icon-type-text a.socialized-link.pinterest:active,
-.socialized-links.icon-type-text a.socialized-link.pinterest:focus,
-.socialized-links.icon-type-text a.socialized-link.pinterest:hover {
-    background: #ffffff;
-    color: #cb2027;
+.socialized-links.icon-type-text .socialized-link-wrapper.pinterest a.socialized-link:active,
+.socialized-links.icon-type-text .socialized-link-wrapper.pinterest a.socialized-link:focus,
+.socialized-links.icon-type-text .socialized-link-wrapper.pinterest a.socialized-link:hover {
+    background: var(--socialized-white);
+    color: var(--socialized-pinterest);
 }
 
 
@@ -162,12 +202,16 @@
     position: sticky;
 }
 
-.socialized-sticky-wrapper .socialized-links a.socialized-link {
+.socialized-sticky-wrapper .socialized-links.js-is-sticky {
+    position: fixed;
+}
+
+.socialized-sticky-wrapper .socialized-links .socialized-link-wrapper {
     display: block;
     margin: 0 0 0.5em;
 }
 
-.socialized-sticky-wrapper .socialized-links a.socialized-link:last-child {
+.socialized-sticky-wrapper .socialized-links .socialized-link-wrapper:last-child {
     margin-bottom: 0;
 }
 
@@ -193,4 +237,52 @@
 .socialized-sticky-wrapper.stick-right .socialized-links {
     float: right;
     margin-right: -45px;
+}
+
+
+/* Copied Popup */
+
+.socialized-link-wrapper.vanity-url .copied-popup {
+    position: relative;
+    display: block;
+    width: auto;
+    background: var(--socialized-off-white);
+    position: absolute;
+    top: 105%;
+    left: -10px;
+    white-space: nowrap;
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 5px;
+    opacity: 1;
+    cursor: default;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+
+.socialized-link-wrapper.vanity-url .copied-popup:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 30%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid var(--socialized-off-white);
+}
+
+.socialized-link-wrapper.vanity-url .copied-popup.hidden {
+    opacity: 0;
+    top: 130%;
 }

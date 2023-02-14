@@ -1,0 +1,562 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Socialized\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-20 16:38+0000\n"
+"PO-Revision-Date: 2022-09-21 22:33+0000\n"
+"Last-Translator: Site Admin\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.2\n"
+"X-Domain: socialized"
+
+#: templates/dashboard-admin.php:97
+msgid " (Use the shortcode "
+msgstr "(Use el código abreviado"
+
+#: templates/dashboard-admin.php:99
+msgid ""
+" to display these buttons within the content. If placed, it will override "
+"the automatic placement so they're only displayed once."
+msgstr ""
+"para mostrar estos botones dentro del contenido. Si se coloca, anulará la "
+"ubicación automática para que solo se muestren una vez."
+
+#: templates/dashboard-admin.php:220
+#, php-format
+msgid ""
+" | or the “<a href=\"%1$s\" target=\"%3$s\">Focus keyphrase</a>” by <a "
+"href=\"%2$s\" target=\"%3$s\" rel=\"noopener noreferrer\">Yoast SEO</a>"
+msgstr ""
+"| o la “<a href=\"%1$s\" target=\"%3$s\">Frase clave de enfoque</a>” de <a "
+"href=\"%2$s\" target=\"%3$s\" rel= \"noopener noreferrer\">Yoast SEO</a>"
+
+#: templates/dashboard-admin.php:24
+msgid "About"
+msgstr "Acerca"
+
+#: socialized-copy.php:568 templates/dashboard-admin.php:204
+msgid "about Custom Campaigns in Google."
+msgstr "sobre campañas personalizadas en Google."
+
+#. Description of the plugin
+msgid ""
+"Add social media sharing buttons to your posts, pages, and custom post types "
+"that automatically track to a custom campaign with your Google Analytics!"
+msgstr ""
+"¡Agregue botones para compartir en las redes sociales a sus publicaciones, "
+"páginas y tipos de publicaciones personalizadas que rastrean automáticamente "
+"una campaña personalizada con su Google Analytics!"
+
+#: templates/dashboard-admin.php:148
+msgid "Advanced Settings"
+msgstr "Ajustes avanzados"
+
+#: socialized-copy.php:174 inc/class-main.php:166
+msgid "After content (displays horizontally)"
+msgstr "Después del contenido (mostrado horizontalmente)"
+
+#. Author of the plugin
+msgid "AuRise Creative"
+msgstr "AuRise Creative"
+
+#: templates/dashboard-admin.php:152
+msgid "Autofix Sticky"
+msgstr "Reparación automática pegajosa"
+
+#. ID
+#: socialized-copy.php:267 inc/class-main.php:254
+msgid "Autofix Sticky Icons"
+msgstr "Iconos adhesivos de corrección automática"
+
+#: socialized-copy.php:562 templates/edit-metabox.php:42
+msgid "automatically generate the missing ones"
+msgstr "generar automáticamente los que faltan"
+
+#: templates/dashboard-admin.php:208
+msgid ""
+"Automatically generates a vanity URL for each social media sharing button "
+"for each post that redirects to the post with the following UTM parameters:"
+msgstr ""
+"Genera automáticamente una URL mnemónica para cada botón de compartir en "
+"redes sociales para cada publicación que redirige a la publicación con los "
+"siguientes parámetros UTM:"
+
+#: socialized-copy.php:173 inc/class-main.php:165
+msgid "Before content (displays horizontally)"
+msgstr "Antes del contenido (mostrado horizontalmente)"
+
+#: templates/dashboard-support.php:27
+msgid "Buy me a Coffee"
+msgstr "Cómprame un café"
+
+#: templates/dashboard-admin.php:202
+msgid ""
+"By adding campaign parameters to the destination URLs you use in your ad "
+"campaigns, you can collect information about the overall efficacy of those "
+"campaigns, and also understand where the campaigns are more effective. For "
+"example, your <em>Summer Sale</em> campaign might be generating lots of "
+"revenue, but if you're running the campaign in several different social apps,"
+" you want to know which of them is sending you the customers who generate "
+"the most revenue. Or if you're running different versions of the campaign "
+"via email, video ads, and in-app ads, you can compare the results to see "
+"where your marketing is most effective."
+msgstr ""
+"Al agregar parámetros de campaña a las URL de destino que usa en sus "
+"campañas publicitarias, puede recopilar información sobre la eficacia "
+"general de esas campañas y también comprender dónde las campañas son más "
+"efectivas. Por ejemplo, su campaña de <em>Rebajas de verano</em> podría "
+"estar generando muchos ingresos, pero si ejecuta la campaña en varias "
+"aplicaciones sociales diferentes, querrá saber cuál de ellas le está "
+"enviando los clientes que generan la la mayoría de los ingresos. O si está "
+"ejecutando diferentes versiones de la campaña por correo electrónico, "
+"anuncios de video y anuncios en la aplicación, puede comparar los resultados "
+"para ver dónde su comercialización es más efectiva."
+
+#: templates/dashboard-admin.php:110
+msgid "Campaign"
+msgstr "Campaña"
+
+#: socialized-copy.php:552 templates/edit-metabox.php:33
+msgid "Campaign Content:"
+msgstr "Contenido de la campaña:"
+
+#: socialized-copy.php:550 templates/edit-metabox.php:31
+msgid "Campaign Medium:"
+msgstr "Medio de la campaña:"
+
+#: socialized-copy.php:551 templates/edit-metabox.php:32
+msgid "Campaign Name:"
+msgstr "Nombre de campaña:"
+
+#: socialized-copy.php:549 templates/edit-metabox.php:30
+msgid "Campaign Source:"
+msgstr "Fuente de la campaña:"
+
+#: socialized-copy.php:518 templates/edit-metabox.php:7
+msgid "Campaign Term"
+msgstr "Término de la campaña"
+
+#: socialized-copy.php:554 templates/edit-metabox.php:35
+msgid "Campaign Term:"
+msgstr "Término de la campaña:"
+
+#: templates/dashboard-admin.php:56
+msgid "Choose a button style for displaying the links"
+msgstr "Elija un estilo de botón para mostrar los enlaces"
+
+#: templates/dashboard-admin.php:95
+msgid "Choose where to display the sharing buttons"
+msgstr "Elija dónde mostrar los botones para compartir"
+
+#: templates/dashboard-admin.php:234
+#, php-format
+msgid ""
+"Click the button below to generate vanity URLs for the following post type(s)"
+" that do not already have them: <code>%s</code>. It was already run once "
+"when this plugin was activated, and each newly created one generates their "
+"own when it is first saved, even as a draft. If you created a custom post "
+"type and wish to generate links for all of those as well, be sure to save "
+"the custom post type's slug in <em>Settings</em> before clicking this button."
+msgstr ""
+"Haga clic en el botón a continuación para generar URL mnemónicas para los "
+"siguientes tipos de publicaciones que aún no las tienen: <code>%s</code>. Ya "
+"se ejecutó una vez cuando se activó este complemento, y cada uno recién "
+"creado genera el suyo propio cuando se guarda por primera vez, incluso como "
+"borrador. Si creó un tipo de publicación personalizada y también desea "
+"generar enlaces para todas ellas, asegúrese de guardar el slug del tipo de "
+"publicación personalizada en <em>Configuración</em> antes de hacer clic en "
+"este botón."
+
+#: templates/dashboard-support.php:26
+msgid "Coffee cup"
+msgstr "Taza de café"
+
+#: templates/dashboard-admin.php:193
+msgid "Comma separated list of the post types to generate URLs for"
+msgstr ""
+"Lista separada por comas de los tipos de publicaciones para generar URL"
+
+#: templates/dashboard-admin.php:142
+msgid ""
+"Comma separated list of up to three (3) related Twitter handles to recommend "
+"to the user after they tweet your content."
+msgstr ""
+"Lista separada por comas de hasta tres (3) identificadores de Twitter "
+"relacionados para recomendar al usuario después de que tuitee su contenido."
+
+#: socialized-copy.php:153 inc/class-main.php:150
+msgid "Copied!"
+msgstr "¡Copiado!"
+
+#: socialized-copy.php:142 inc/class-main.php:152
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: inc/class-main.php:142
+msgid "Copy URL"
+msgstr "Copiar URL"
+
+#: templates/dashboard-admin.php:217
+msgid "Defined by typing in the text box on the post or page"
+msgstr "Definido al escribir en el cuadro de texto en la publicación o página"
+
+#: templates/dashboard-admin.php:37
+msgid "Display"
+msgstr "Monitor"
+
+#: templates/dashboard-admin.php:229
+msgid ""
+"Displays social media sharing links in the content of each post that uses "
+"these vanity URLs."
+msgstr ""
+"Muestra enlaces para compartir en redes sociales en el contenido de cada "
+"publicación que utiliza estas URL mnemónicas."
+
+#: templates/dashboard-support.php:24
+msgid "Donate"
+msgstr "Donar"
+
+#. 5
+#: inc/class-main.php:1090
+msgid "Edit"
+msgstr "Editar"
+
+#: socialized-copy.php:567 templates/edit-metabox.php:47
+msgid "Edit Global Settings"
+msgstr "Editar configuraciones globales"
+
+#: socialized-copy.php:562 templates/edit-metabox.php:42
+msgid "Edit the vanity slug above and save or"
+msgstr "Edite el slug de vanidad arriba y guarde o"
+
+#: socialized-copy.php:124 inc/class-main.php:132
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: socialized-copy.php:565 templates/edit-metabox.php:45
+msgid "Enable vanity URLs"
+msgstr "Habilitar URL mnemónicas"
+
+#: templates/dashboard-support.php:9
+msgid "Enjoying my plugin? Please leave a review!"
+msgstr "¿Disfrutando de mi complemento? ¡Por favor, deje una reseña!"
+
+#. ID
+#: socialized-copy.php:245 inc/class-main.php:239
+msgid "Exclude FontAwesome"
+msgstr "Excluir FontAwesome"
+
+#: socialized-copy.php:84 inc/class-main.php:92
+msgid "Facebook"
+msgstr "Facebook"
+
+#: socialized-copy.php:183
+msgid "Font Awesome Icons"
+msgstr "Iconos de FontAwesome"
+
+#: templates/dashboard-admin.php:63
+#| msgid "Font Awesome"
+msgid "FontAwesome"
+msgstr "FontAwesome"
+
+#: inc/class-main.php:175
+msgid "FontAwesome Icons"
+msgstr "Iconos de FontAwesome"
+
+#: inc/class-main.php:139
+msgid "Forward via email"
+msgstr "Reenviar por correo electrónico"
+
+#: templates/dashboard-admin.php:25 templates/dashboard-admin.php:236
+msgid "Generate Missing Vanity URLs"
+msgstr "Generar URL mnemónicas faltantes"
+
+#: inc/class-main.php:1071
+msgid "hit(s)"
+msgstr "enlaces de visitas"
+
+#: socialized-copy.php:548 templates/edit-metabox.php:29
+msgid "Hits:"
+msgstr "Enlaces de visitas:"
+
+#. Author URI of the plugin
+msgid "https://aurisecreative.com/"
+msgstr "https://aurisecreative.com/"
+
+#. URI of the plugin
+msgid "https://aurisecreative.com/socialized/"
+msgstr "https://aurisecreative.com/socialized/"
+
+#: socialized-copy.php:1165 inc/class-main.php:1285
+msgid "I thought you might like this article:"
+msgstr "Pensé que te podría gustar este artículo:"
+
+#: socialized-copy.php:177 inc/class-main.php:169
+msgid "I will use shortcodes only"
+msgstr "Usaré códigos cortos solo"
+
+#: templates/dashboard-admin.php:41
+msgid "Icons"
+msgstr "Iconos"
+
+#: inc/class-main.php:1049
+msgid "ID"
+msgstr "ID"
+
+#: templates/dashboard-admin.php:178
+msgid ""
+"If disabled, the social media sharing links will still appear on the "
+"posts/pages, but will share your permalink with the UTM parameters added to "
+"it instead. Any vanity URLs created by this plugin that were shared on "
+"social media or other mediums will also stop redirecting, resulting in a 404 "
+"page to be displayed"
+msgstr ""
+"Si está deshabilitado, los enlaces para compartir en las redes sociales "
+"seguirán apareciendo en las publicaciones/páginas, pero compartirán su "
+"enlace permanente con los parámetros UTM agregados. Cualquier URL mnemónica "
+"creada por este complemento que se haya compartido en las redes sociales u "
+"otros medios también dejará de redirigir, lo que dará como resultado que se "
+"muestre una página 404"
+
+#: socialized-copy.php:520 templates/edit-metabox.php:9
+msgid "If left blank, this will use Yoast SEO's \"Focus keyphrase\""
+msgstr ""
+"Si se deja en blanco, se usará la \"frase clave de enfoque\" de Yoast SEO."
+
+#: templates/dashboard-support.php:15
+msgid ""
+"If you're experiencing issues with this plugin or have a suggestion for a "
+"feature or fix, please check the support threads or submit a ticket to give "
+"me the opportunity to make it better. I want to help!"
+msgstr ""
+"Si tiene problemas con este complemento o tiene una sugerencia para una "
+"función o solución, consulte los hilos de soporte o envíe un ticket para "
+"darme la oportunidad de mejorarlo. ¡Quiero ayudar!"
+
+#: socialized-copy.php:182 inc/class-main.php:174
+msgid "Image Icons"
+msgstr "Iconos de imagen"
+
+#: socialized-copy.php:568 templates/dashboard-admin.php:204
+msgid "Learn more"
+msgstr "Aprende más"
+
+#: socialized-copy.php:175 inc/class-main.php:167
+msgid "Left of content (displays vertically)"
+msgstr "Izquierda del contenido (se muestra verticalmente)"
+
+#: templates/dashboard-admin.php:106
+msgid "Link Tracking"
+msgstr "Seguimiento de enlaces"
+
+#: socialized-copy.php:104 inc/class-main.php:112
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: templates/dashboard-admin.php:80
+msgid "Location"
+msgstr "la posición"
+
+#: templates/dashboard-admin.php:71 templates/dashboard-admin.php:160
+#: templates/dashboard-admin.php:177
+msgid "OFF"
+msgstr "Desactivada"
+
+#: templates/dashboard-admin.php:70 templates/dashboard-admin.php:159
+#: templates/dashboard-admin.php:176
+msgid "ON"
+msgstr "Activado"
+
+#: templates/dashboard-admin.php:213
+msgid "or define in <em>Settings</em>"
+msgstr "o definir en <em>Configuración</em>"
+
+#: socialized-copy.php:114 inc/class-main.php:122
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: templates/dashboard-support.php:2
+msgid "Plugin Support"
+msgstr "Ayuda con complemento"
+
+#: templates/dashboard-admin.php:210 templates/dashboard-admin.php:211
+#: templates/dashboard-admin.php:212 templates/dashboard-admin.php:213
+#: templates/dashboard-admin.php:216
+msgid "Possible value(s):"
+msgstr "Valores posibles:"
+
+#: inc/class-main.php:1050
+msgid "Post Type"
+msgstr "Post Type"
+
+#: templates/dashboard-admin.php:186
+msgid "Post Types"
+msgstr "Post Types"
+
+#: socialized-copy.php:234 inc/class-main.php:228
+msgid "Redirections Enabled"
+msgstr "Redirecciones activadas"
+
+#: socialized-copy.php:565 templates/edit-metabox.php:45
+msgid "Redirects are disabled!"
+msgstr "¡Las redirecciones están desactivadas!"
+
+#: templates/dashboard-admin.php:169
+msgid "Redirects Enabled"
+msgstr "¡Las redirecciones están activadas!"
+
+#: templates/dashboard-admin.php:136
+msgid "Related Twitter Handles"
+msgstr "Identificadores de Twitter relacionados"
+
+#: socialized-copy.php:176 inc/class-main.php:168
+msgid "Right of content (displays vertically)"
+msgstr "Derecho de contenido (muestra verticalmente)"
+
+#: socialized-copy.php:157
+msgid "ROP: Facebook"
+msgstr "ROP: Facebook"
+
+#: templates/dashboard-admin.php:197
+msgid "Save All Settings"
+msgstr "Guardar todas las configuraciones"
+
+#: socialized-copy.php:375 inc/class-main.php:380
+#: templates/dashboard-admin.php:22
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: templates/dashboard-admin.php:9
+msgid "Settings Saved!"
+msgstr "¡Configuraciones guardados!"
+
+#: socialized-copy.php:1124 inc/class-main.php:1244
+msgid "Share on"
+msgstr "Compartir en"
+
+#: socialized-copy.php:1227 inc/class-main.php:1338
+msgid "Share this on:"
+msgstr "Comparte esto en:"
+
+#. Name of the plugin
+#: socialized-copy.php:67 inc/class-main.php:74
+msgid "Socialized"
+msgstr "Socialized"
+
+#: templates/dashboard-support.php:17
+msgid "Support Forums"
+msgstr "Foros de ayuda"
+
+#: socialized-copy.php:184 inc/class-main.php:176
+msgid "Text Links"
+msgstr "Enlaces de texto"
+
+#: templates/dashboard-admin.php:116
+msgid ""
+"The value of the \"utm_campaign\" parameter for all links shared with this "
+"plugin."
+msgstr ""
+"El valor del parámetro \"utm_campaign\" para todos los enlaces compartidos "
+"con este complemento."
+
+#: templates/dashboard-support.php:21
+#| msgid ""
+#| "This is a <em>free</em> plugin that I poured a bit of my heart and soul "
+#| "into with the sole purpose of being helpful to you and the users of your "
+#| "WordPress website. Please help support my queer and autistic-led small "
+#| "business by donating! Thank you!"
+msgid ""
+"This is a <em>free</em> plugin that I poured a bit of my heart and soul into "
+"with the sole purpose of being helpful to you and the users of your "
+"WordPress website. Please consider supporting my queer and autistic-led "
+"small business by donating! Thank you!"
+msgstr ""
+"Este es un complemento <em>gratuito</em> en el que puse un poco de mi "
+"corazón y mi alma con el único propósito de ser útil para usted y los "
+"usuarios de su sitio web de WordPress. ¡Considere apoyar a mi pequeña "
+"empresa dirigida por personas queer y autistas mediante una donación! "
+"¡Gracias!"
+
+#: templates/dashboard-admin.php:205
+msgid "This plugin accomplishes two (2) things:"
+msgstr "Este complemento logra dos (2) cosas:"
+
+#: inc/class-main.php:1051
+msgid "Title"
+msgstr "Título"
+
+#: templates/dashboard-admin.php:72
+#| msgid ""
+#| "Toggle this off if your theme or another plugin already implements Font "
+#| "Awesome version 6 or later."
+msgid ""
+"Toggle this off if your theme or another plugin already implements "
+"FontAwesome version 6 or later."
+msgstr ""
+"Desactive esta opción si su tema u otro complemento ya implementa "
+"FontAwesome versión 6 o posterior."
+
+#: socialized-copy.php:94 inc/class-main.php:102
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/dashboard-admin.php:123
+msgid "Twitter Handle"
+msgstr "Identificador de Twitter"
+
+#: socialized-copy.php:529 templates/edit-metabox.php:18
+msgid "Update Links"
+msgstr "Actualizar enlaces"
+
+#: socialized-copy.php:526 templates/edit-metabox.php:15
+msgid "Vanity Slug"
+msgstr "Bonito enlace"
+
+#: socialized-copy.php:547 templates/edit-metabox.php:28
+msgid "Vanity URL:"
+msgstr "Bonita URL:"
+
+#. 6
+#: inc/class-main.php:1091
+msgid "View"
+msgstr "Ver"
+
+#: templates/dashboard-admin.php:23
+msgid "View All"
+msgstr "Ver todo"
+
+#: templates/dashboard-admin.php:203
+msgid ""
+"When a user clicks a referral link, the parameters you add are sent to "
+"Analytics, and the related data is available in the Campaigns reports."
+msgstr ""
+"Cuando un usuario hace clic en un enlace de referencia, los parámetros que "
+"agrega se envían a Analytics y los datos relacionados están disponibles en "
+"los informes de Campañas."
+
+#: templates/dashboard-admin.php:161
+msgid ""
+"When sticking the buttons to the left or right, certain CSS attributes need "
+"to be set for it to work. Enabling this will automatically fix those issues."
+msgstr ""
+"Al pegar los botones a la izquierda o a la derecha, se deben configurar "
+"ciertos atributos CSS para que funcione. Habilitar esto solucionará "
+"automáticamente esos problemas."
+
+#: templates/dashboard-support.php:11
+msgid "Write a Review"
+msgstr "Escribe una reseña"
+
+#: templates/dashboard-admin.php:129
+msgid "Your default Twitter handle"
+msgstr "Tu identificador predeterminado de Twitter"
+
+#: templates/dashboard-admin.php:231
+msgid "Your permalink struture will not be affected."
+msgstr "Su estructura de enlaces permanentes no se verá afectada."

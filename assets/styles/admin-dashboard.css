@@ -1,19 +1,39 @@
 /*!
     Name: admin-dashboard.css
-    Author: Tessa Watkins LLC | https://tessawatkins.com/
-    Last Modified: March 13, 2019 at 11:22am
+    Author: AuRise Creative | https://aurisecreative.com
+    Last Modified: September 20, 2022, at 11:41
 */
 
-
-/* Global Styles */
-
-.tw-plugin {
+.au-plugin {
+    --au-plugin-accent-color: #019ecf;
+    --au-plugin-accent-color-hover: #00789e;
+    --au-plugin-accent-color-2: #1c395d;
+    --au-plugin-white: #ffffff;
+    --au-plugin-light-bg: #f4f5f7;
+    --au-plugin-light-border: #c3c4c7;
+    --au-plugin-light-shadow: #9a9a9a;
+    --au-plugin-medium-border: #666666;
+    --au-plugin-text: #333333;
+    --au-plugin-black: #000000;
+    --au-switch-width: 80px;
+    --au-switch-height: 30px;
+    --au-switch-ball: 20px;
     cursor: default;
     padding-right: 1rem;
 }
 
-.tw-plugin,
-.tw-plugin * {
+
+/* Localization: es-mx */
+
+body.locale-es-mx .au-plugin {
+    --au-switch-width: 150px;
+}
+
+
+/* Plugin Styles */
+
+.au-plugin,
+.au-plugin * {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -21,33 +41,63 @@
     box-sizing: border-box;
 }
 
-.tw-plugin .hide {
+.au-plugin .hide {
     display: none !important;
 }
 
-.tw-plugin,
-.tw-plugin .block,
-.tw-plugin .container,
-.tw-plugin.container {
+.au-plugin,
+.au-plugin .block,
+.au-plugin .container,
+.au-plugin.container {
     display: block;
     width: 100%;
 }
 
-.tw-plugin .container,
-.tw-plugin.container {
-    max-width: 800px;
+.au-plugin h1 {
+    display: block;
+    margin: 0;
+    padding: 0 0 0 5px;
 }
 
-.tw-plugin .block {
+.au-plugin,
+.au-plugin p,
+.au-plugin li,
+.au-plugin input,
+.au-plugin select,
+.au-plugin textarea,
+.au-plugin button {
+    font-size: 16px;
+}
+
+.au-plugin,
+.au-plugin p,
+.au-plugin li,
+.au-plugin textarea {
+    line-height: 1.5;
+}
+
+.au-plugin input,
+.au-plugin select,
+.au-plugin button {
+    line-height: 2;
+}
+
+.au-plugin .container,
+.au-plugin.container {
+    max-width: 800px;
+    margin: 0 auto 0 0;
+}
+
+.au-plugin .block {
     margin-top: 1rem;
-    border: 1px solid #999999;
-    background-color: #ffffff;
+    border: 1px solid var(--au-plugin-light-border);
+    background-color: var(--au-plugin-white);
     padding: 1rem;
-    -moz-box-shadow: 2px 2px 5px #9a9a9a;
-    -ms-box-shadow: 2px 2px 5px #9a9a9a;
-    -o-box-shadow: 2px 2px 5px #9a9a9a;
-    -webkit-box-shadow: 2px 2px 5px #9a9a9a;
-    box-shadow: 2px 2px 5px #9a9a9a;
+    -moz-box-shadow: 2px 2px 5px var(--au-plugin-light-shadow);
+    -ms-box-shadow: 2px 2px 5px var(--au-plugin-light-shadow);
+    -o-box-shadow: 2px 2px 5px var(--au-plugin-light-shadow);
+    -webkit-box-shadow: 2px 2px 5px var(--au-plugin-light-shadow);
+    box-shadow: 2px 2px 5px var(--au-plugin-light-shadow);
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
@@ -55,15 +105,168 @@
     border-radius: 5px;
 }
 
+.au-plugin>h1+.updated {
+    display: none;
+}
+
+
+/* Support Block */
+
+.au-plugin .au-plugin-admin-ui,
+.au-plugin .au-plugin-support {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.au-plugin .au-plugin-admin-ui {
+    max-width: 700px;
+}
+
+@media (min-width: 966px) {
+    .au-plugin .au-plugin-support {
+        width: 250px;
+        margin-left: 16px;
+    }
+}
+
+.au-plugin .au-plugin-support {
+    padding: 16px;
+    background: var(--au-plugin-white);
+    border-radius: 7px;
+}
+
+.au-plugin .au-plugin-support h2 {
+    margin: 0;
+}
+
+.au-plugin .au-plugin-support p {
+    font-size: 14px;
+}
+
+.au-plugin .au-plugin-support .button {
+    margin-top: 8px;
+}
+
+.au-plugin .au-plugin-support .donate-button {
+    display: inline-block;
+    white-space: nowrap;
+    min-width: 160px;
+}
+
+.au-plugin .au-plugin-support .donate-button a,
+.au-plugin .au-plugin-support .donate-button a:visited {
+    line-height: 36px;
+    min-width: 150px;
+    display: inline-block;
+    background-color: var(--au-plugin-accent-color);
+    padding: 2px 12px;
+    text-align: center;
+    border-radius: 7px;
+    color: var(--au-plugin-white);
+    cursor: pointer;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    border: none;
+    font-family: 'Quicksand', Helvetica, Century Gothic, sans-serif;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 14px;
+    -moz-box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+    -ms-box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+    -o-box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+    -webkit-box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+    box-shadow: 1px 1px 0px rgb(0 0 0 / 20%);
+}
+
+.au-plugin .au-plugin-support .donate-button a:active,
+.au-plugin .au-plugin-support .donate-button a:hover,
+.au-plugin .au-plugin-support .donate-button a:focus {
+    opacity: 0.85;
+    color: var(--au-plugin-light-bg);
+}
+
+.au-plugin .au-plugin-support .donate-button a span {
+    color: var(--au-plugin-white);
+    letter-spacing: -0.15px;
+    text-wrap: none;
+    vertical-align: middle;
+    line-height: 33px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgb(34 34 34 / 5%);
+}
+
+.au-plugin .au-plugin-support .donate-button a span img {
+    height: 15px;
+    width: 22px;
+    display: initial;
+    animation: tw-wiggle 3s infinite;
+}
+
+.au-plugin .au-plugin-support .donate-button a span img {
+    display: initial;
+    vertical-align: middle;
+    height: 13px;
+    width: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    margin: 0 5px 3px 0;
+    content: url('../images/kofi-cup.png');
+}
+
+.au-plugin .au-plugin-support .donate-button a span img:after {
+    vertical-align: middle;
+    height: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    margin: 0 6px 4px 0;
+    content: url('../images/kofi-logo.svg');
+}
+
+@keyframes tw-wiggle {
+    0% {
+        transform: rotate(0) scale(1)
+    }
+    60% {
+        transform: rotate(0) scale(1)
+    }
+    75% {
+        transform: rotate(0) scale(1.12)
+    }
+    80% {
+        transform: rotate(0) scale(1.1)
+    }
+    84% {
+        transform: rotate(-10deg) scale(1.1)
+    }
+    88% {
+        transform: rotate(10deg) scale(1.1)
+    }
+    92% {
+        transform: rotate(-10deg) scale(1.1)
+    }
+    96% {
+        transform: rotate(10deg) scale(1.1)
+    }
+    100% {
+        transform: rotate(0) scale(1)
+    }
+}
+
 
 /* Modules */
 
-.tw-plugin pre {
+.au-plugin pre {
     display: block;
     margin: 1rem 0;
     padding: 7px;
-    background: #efefef;
-    color: #333333;
+    background: var(--au-plugin-light-bg);
+    color: var(--au-plugin-text);
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     text-align: left;
@@ -71,7 +274,7 @@
     cursor: text;
 }
 
-.tw-plugin .loading-spinner {
+.au-plugin .loading-spinner {
     background: none;
     border: none;
     text-align: center;
@@ -79,19 +282,19 @@
     margin-top: 20px;
 }
 
-.tw-plugin .note {
+.au-plugin .note {
     font-weight: 400;
     font-style: italic;
-    color: #666666;
+    color: var(--au-plugin-medium-border);
 }
 
-.tw-plugin .inline-code-snippet {
+.au-plugin .inline-code-snippet {
     display: inline-block;
     margin: 0;
     padding: 3px;
-    background: #efefef;
-    color: #019ecf;
-    border: 1px dashed #cccccc;
+    background: var(--au-plugin-light-bg);
+    color: var(--au-plugin-accent-color);
+    border: 1px dashed var(--au-plugin-light-border);
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     font-weight: 700;
@@ -101,28 +304,28 @@
     cursor: text;
 }
 
-.tw-plugin .status-text.notice {
+.au-plugin .status-text.notice {
     margin: 0;
     padding: 1em;
     font-size: 1.2;
 }
 
-.tw-plugin .status-text.notice.notice-info {
-    border-left-color: #019ecf;
+.au-plugin .status-text.notice.notice-info {
+    border-left-color: var(--au-plugin-accent-color);
 }
 
 
 /* Buttons */
 
-.tw-plugin button {
+.au-plugin button {
     cursor: pointer;
 }
 
-.tw-plugin button[disabled] {
+.au-plugin button[disabled] {
     cursor: not-allowed !important;
 }
 
-.tw-plugin button+.loading-spinner {
+.au-plugin button+.loading-spinner {
     display: inline-block;
     margin: 0 0 0 0.25em;
     font-size: 1.5em;
@@ -134,26 +337,26 @@
 
 /* Form */
 
-.tw-plugin form {
+.au-plugin form {
     display: block;
     width: 100%;
 }
 
-.tw-plugin form p:first-of-type {
+.au-plugin form p:first-of-type {
     margin-top: 0;
 }
 
 
 /* Form: Input */
 
-.tw-plugin form .input-field {
+.au-plugin form .input-field {
     margin: 0 0 1rem;
 }
 
-.tw-plugin form .input-field input,
-.tw-plugin form .input-field label,
-.tw-plugin form .input-field select,
-.tw-plugin form .input-field textarea {
+.au-plugin form .input-field input,
+.au-plugin form .input-field label,
+.au-plugin form .input-field select,
+.au-plugin form .input-field textarea {
     display: block;
     width: 100%;
     margin: 0;
@@ -168,47 +371,47 @@
     box-shadow: none;
 }
 
-.tw-plugin form .input-field textarea {
+.au-plugin form .input-field textarea {
     min-height: 50px;
     height: 60px;
 }
 
-.tw-plugin form .input-field input,
-.tw-plugin form .input-field select,
-.tw-plugin form .input-field textarea {
-    border: 1px solid #999999;
-    background: #ffffff;
-    color: #000000;
+.au-plugin form .input-field input,
+.au-plugin form .input-field select,
+.au-plugin form .input-field textarea {
+    border: 1px solid var(--au-plugin-light-border);
+    background: var(--au-plugin-white);
+    color: var(--au-plugin-black);
 }
 
-.tw-plugin form .input-field input:focus,
-.tw-plugin form .input-field select:focus,
-.tw-plugin form .input-field textarea:focus {
-    border-color: #019ecf;
+.au-plugin form .input-field input:focus,
+.au-plugin form .input-field select:focus,
+.au-plugin form .input-field textarea:focus {
+    border-color: var(--au-plugin-accent-color);
 }
 
 
 /* Form: Input: Checkboxes & Radio Buttons */
 
-.tw-plugin form .input-field.checkbox,
-.tw-plugin form .input-field.radio {
+.au-plugin form .input-field.checkbox,
+.au-plugin form .input-field.radio {
     position: relative;
 }
 
-.tw-plugin form .input-field.checkbox input,
-.tw-plugin form .input-field.radio input {
+.au-plugin form .input-field.checkbox:not(.has-checkbox-switch) input,
+.au-plugin form .input-field.radio input {
     display: none !important;
 }
 
-.tw-plugin form .input-field.checkbox input+label,
-.tw-plugin form .input-field.radio input+label {
+.au-plugin form .input-field.checkbox input+label,
+.au-plugin form .input-field.radio input+label {
     padding-left: 30px;
 }
 
-.tw-plugin form .input-field.checkbox input+label:before,
-.tw-plugin form .input-field.radio input+label:before,
-.tw-plugin form .input-field.checkbox input+label:after,
-.tw-plugin form .input-field.radio input+label:after {
+.au-plugin form .input-field.checkbox input+label:before,
+.au-plugin form .input-field.radio input+label:before,
+.au-plugin form .input-field.checkbox input+label:after,
+.au-plugin form .input-field.radio input+label:after {
     content: '';
     display: block;
     width: 12px;
@@ -224,11 +427,11 @@
     transition: all linear 0.3s;
 }
 
-.tw-plugin form .input-field.checkbox input+label:before,
-.tw-plugin form .input-field.radio input+label:before {
-    background-color: #ffffff;
+.au-plugin form .input-field.checkbox input+label:before,
+.au-plugin form .input-field.radio input+label:before {
+    background-color: var(--au-plugin-white);
     padding: 2px;
-    border: 1px solid #999999;
+    border: 1px solid var(--au-plugin-light-border);
     -moz-background-clip: content-box;
     -ms-background-clip: content-box;
     -o-background-clip: content-box;
@@ -236,19 +439,19 @@
     background-clip: content-box;
 }
 
-.tw-plugin form .input-field.checkbox input+label:after,
-.tw-plugin form .input-field.radio input+label:after {
+.au-plugin form .input-field.checkbox input+label:after,
+.au-plugin form .input-field.radio input+label:after {
     content: '\f00c';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    color: #0b0966;
+    color: var(--au-plugin-accent-color-2);
     opacity: 0;
     font-size: 22px;
     top: 1px;
     left: -1px;
 }
 
-.tw-plugin form .input-field.radio input[type=radio]+label:before {
+.au-plugin form .input-field.radio input[type=radio]+label:before {
     -moz-border-radius: 1000px;
     -ms-border-radius: 1000px;
     -o-border-radius: 1000px;
@@ -256,82 +459,240 @@
     border-radius: 1000px;
 }
 
-.tw-plugin form .input-field.checkbox input:checked+label:after,
-.tw-plugin form .input-field.radio input:checked+label:after {
+.au-plugin form .input-field.checkbox input:checked+label:after,
+.au-plugin form .input-field.radio input:checked+label:after {
     opacity: 1;
-    color: #019ecf;
+    color: var(--au-plugin-accent-color);
 }
 
 
-/*.tw-plugin form .input-field.checkbox input:checked+label:before,
-.tw-plugin form .input-field.radio input:checked+label:before {
-     background-color: #0b0966; 
-}*/
+/* Form: Checkbox switch */
+
+.au-plugin .checkbox-switch {
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: var(--au-switch-width);
+    height: var(--au-switch-height);
+    line-height: 1.2;
+    font-size: 14px;
+    -moz-border-radius: var(--au-switch-height);
+    -ms-border-radius: var(--au-switch-height);
+    -o-border-radius: var(--au-switch-height);
+    -webkit-border-radius: var(--au-switch-height);
+    border-radius: var(--au-switch-height);
+}
+
+.au-plugin .checkbox-switch input.input-checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--au-switch-width);
+    height: var(--au-switch-height);
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.au-plugin .checkbox-switch .checkbox-animate {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: var(--au-switch-width);
+    height: var(--au-switch-height);
+    background-color: var(--au-plugin-light-border);
+    -moz-transition: background 0.25s ease-out 0s;
+    -ms-transition: background 0.25s ease-out 0s;
+    -o-transition: background 0.25s ease-out 0s;
+    -webkit-transition: background 0.25s ease-out 0s;
+    transition: background 0.25s ease-out 0s;
+}
+
+.au-plugin .checkbox-switch .checkbox-animate:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--au-switch-ball);
+    height: var(--au-switch-ball);
+    -moz-border-radius: var(--au-switch-ball);
+    -ms-border-radius: var(--au-switch-ball);
+    -o-border-radius: var(--au-switch-ball);
+    -webkit-border-radius: var(--au-switch-ball);
+    border-radius: var(--au-switch-ball);
+    background-color: var(--au-plugin-light-shadow);
+    top: calc(var(--au-switch-ball)/4);
+    left: calc(var(--au-switch-ball)/4);
+    -moz-transition: left 0.3s ease-out 0s;
+    -ms-transition: left 0.3s ease-out 0s;
+    -o-transition: left 0.3s ease-out 0s;
+    -webkit-transition: left 0.3s ease-out 0s;
+    transition: left 0.3s ease-out 0s;
+    z-index: 10;
+}
+
+.au-plugin .checkbox-switch input.input-checkbox:checked+.checkbox-animate {
+    background-color: var(--au-plugin-accent-color);
+}
+
+.au-plugin .checkbox-switch input.input-checkbox:checked+.checkbox-animate:before {
+    left: 55px;
+    left: calc(var(--au-switch-width) - var(--au-switch-ball) - (var(--au-switch-ball)/4));
+    background-color: var(--au-plugin-accent-color-hover);
+}
+
+.au-plugin .checkbox-switch .checkbox-off,
+.au-plugin .checkbox-switch .checkbox-on {
+    display: inline-block;
+    color: var(--au-plugin-white);
+    font-weight: 700;
+    width: var(--au-switch-width);
+    padding: calc(var(--au-switch-ball)/3) calc(var(--au-switch-ball) + 10px);
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.au-plugin .checkbox-switch .checkbox-on {
+    display: none;
+}
+
+.au-plugin .checkbox-switch input.input-checkbox:checked+.checkbox-animate .checkbox-off {
+    display: none;
+}
+
+.au-plugin .checkbox-switch input.input-checkbox:checked+.checkbox-animate .checkbox-on {
+    display: inline-block;
+}
 
 
 /* Form: Submit Buttons */
 
-.tw-plugin form .buttons p.submit {
+.au-plugin form .buttons p.submit {
     margin: 0;
     padding: 0;
 }
 
 
-/* Tabbed Navigation */
-
-.tw-plugin ul#tabs {
-    display: block;
-    margin: 0;
-    width: 100%;
-    list-style: none;
-    border-bottom: 1px solid #0b0966;
-}
-
-.tw-plugin ul#tabs li {
-    display: inline-block;
-    margin: 0 0 0 5px;
-}
-
-.tw-plugin ul#tabs li button {
-    display: block;
-    margin: 0;
-    padding: 0.5rem 2rem;
-    cursor: pointer;
-    background: #cccccc;
-    border: 1px solid #0b0966;
-    color: #0b0966;
-    color: #333333;
-    outline: none;
-    font-weight: 700;
-    position: relative;
-    top: 1px;
-    /*text-transform: uppercase;*/
-    -moz-transition: color linear 0.3s;
-    -ms-transition: color linear 0.3s;
-    -o-transition: color linear 0.3s;
-    -webkit-transition: color linear 0.3s;
-    transition: color linear 0.3s;
-}
-
-.tw-plugin ul#tabs li button.active {
-    background: none;
-    border-bottom: 1px solid #f1f1f1;
-    color: #0b0966;
-}
-
-
 /* Section Content */
 
-section ul {
+.au-plugin section ul {
     list-style: disc;
 }
 
-section ol,
-section ul {
+.au-plugin section ol,
+.au-plugin section ul {
     list-style: initial;
     margin: 0.5em 0 1em 2em;
 }
 
-section ol {
+.au-plugin section ol {
     list-style: decimal;
+}
+
+
+/* Tables */
+
+.au-plugin section table.au-table {
+    width: 100%;
+    margin: 16px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid var(--au-plugin-light-border);
+}
+
+.au-plugin section table.au-table thead tr th {
+    text-align: center;
+    font-weight: 700;
+}
+
+.au-plugin section table.au-table th,
+.au-plugin section table.au-table td {
+    padding: 4px;
+}
+
+.au-plugin section table.au-table tbody tr td {
+    vertical-align: top;
+}
+
+.au-plugin section table.au-table tbody tr:nth-child(odd) td {
+    background: var(--au-plugin-white);
+}
+
+.au-plugin section table.au-table tbody tr td:not(:first-of-type) {
+    border-left: 1px dashed var(--au-plugin-light-border);
+}
+
+
+/* Pagination */
+
+.au-plugin .tab nav.pagination {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+
+.au-plugin .tab nav.pagination ul {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.au-plugin .tab nav.pagination li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.au-plugin .tab nav.pagination li a {
+    display: block;
+    margin: 0;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.au-plugin .tab nav.pagination li a:active,
+.au-plugin .tab nav.pagination li a:focus,
+.au-plugin .tab nav.pagination li a:hover {
+    text-decoration: underline;
+}
+
+.au-plugin .tab nav.pagination li .page-numbers.current {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+/* Intrusive Plugin Notices */
+
+.au-plugin .mwp-notice-container {
+    display: none !important;
+}
+
+
+/* Socialized Plugin */
+
+.au-plugin table.au-table tbody td.slug ul {
+    margin: 0;
+    list-style: none;
+}
+
+.au-plugin table.au-table tbody td.slug a {
+    white-space: nowrap;
+}
+
+.au-plugin table.au-table tbody td.slug ul li:first-of-type {
+    margin-top: 0;
+}
+
+.au-plugin table.au-table tbody td.slug ul li:last-of-type {
+    margin-bottom: 0;
 }

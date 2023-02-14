@@ -1,20 +1,28 @@
-#socialized.postbox .inside fieldset p.input-field label,
-#socialized.postbox .inside fieldset p.input-field input {
-    display: block;
-    width: 100%;
+/*!
+    Name: admin-metabox.css
+    Plugin: Socialized
+    Author: AuRise Creative | https://aurisecreative.com
+    Last Modified: September 21, 2022, at 10:43
+*/
+
+
+/* Global Styles */
+
+.au-metabox-socialized {
+    --au-socialized-accent-color: #019ecf;
+    --au-socialized-accent-color-hover: #027ca2;
+    --au-socialized-accent-color-2: #1c395d;
+    --au-socialized-white: #ffffff;
+    --au-socialized-light-bg: #efefef;
+    --au-socialized-light-border: #cccccc;
+    --au-socialized-light-shadow: #9a9a9a;
+    --au-socialized-medium-border: #666666;
+    --au-socialized-text: #333333;
+    --au-socialized-black: #000000;
+    --au-socialized-button-width: 110px;
 }
 
-#socialized.postbox .inside fieldset p.input-field label {
-    font-weight: 700;
-}
-
-#socialized.postbox .inside fieldset p.input-field label .note {
-    font-weight: 400;
-    font-style: italic;
-    color: #666666;
-}
-
-#socialized.postbox .inside * {
+.au-metabox-socialized * {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -22,14 +30,43 @@
     box-sizing: border-box;
 }
 
-#socialized.postbox .inside ol {
+.au-metabox-socialized .hide {
+    display: none !important;
+}
+
+.au-metabox-socialized fieldset p.input-field label,
+.au-metabox-socialized fieldset p.input-field input {
+    display: block;
+    width: 100%;
+}
+
+.au-metabox-socialized fieldset p.input-field label {
+    font-weight: 700;
+}
+
+.au-metabox-socialized fieldset p.input-field label .note {
+    font-weight: 400;
+    font-style: italic;
+    color: var(--au-socialized-medium-border);
+}
+
+.au-metabox-socialized fieldset .button.button-primary {
+    margin: 0 0 1em;
+}
+
+.au-metabox-socialized fieldset .notice {
+    min-height: 38px;
+    padding-top: 9px;
+}
+
+.au-metabox-socialized ol {
     display: block;
     width: 100%;
     margin: 0;
     list-style-type: none;
 }
 
-#socialized.postbox .inside ol:after {
+.au-metabox-socialized ol:after {
     content: '';
     display: block;
     width: 100%;
@@ -37,12 +74,12 @@
     clear: both;
 }
 
-#socialized.postbox .inside ol>li {
+.au-metabox-socialized ol>li {
     display: block;
     width: 100%;
     margin: 0 0 1em 0;
     padding: 1em;
-    background: #efefef;
+    background: var(--au-socialized-light-bg);
     float: left;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
@@ -53,20 +90,20 @@
 
 @media (min-width: 630px) and (max-width: 850px),
 (min-width: 1100px) {
-    #socialized.postbox .inside ol>li {
+    .au-metabox-socialized ol>li {
         width: 49%;
     }
-    #socialized.postbox .inside ol>li:nth-child(odd) {
+    .au-metabox-socialized ol>li:nth-child(odd) {
         margin-right: 1%;
     }
-    #socialized.postbox .inside ol>li:nth-child(even) {
+    .au-metabox-socialized ol>li:nth-child(even) {
         margin-left: 1%;
     }
 }
 
-#socialized.postbox .inside ol>li>p {
+.au-metabox-socialized ol>li>p {
     margin: 0 0 1em;
     padding: 0 0 0.5em;
-    border-bottom: 1px dashed #999999;
+    border-bottom: 1px dashed var(--au-socialized-light-border);
     font-size: 1.2em;
 }
